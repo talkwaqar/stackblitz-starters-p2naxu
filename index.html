@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Face Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Fabric.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Face Creator</h1>
+        <div class="content">
+            <div class="selection-panel">
+                <div id="parts-selector"></div>
+                <div id="parts-options"></div>
+            </div>
+            <div class="canvas-panel">
+                <div id="canvas-container">
+                    <canvas id="face-canvas" width="400" height="400"></canvas>
+                </div>
+                <p class="info-text">Design your face here. When you save, you'll get an 18-inch high-resolution image!
+                </p>
+
+                <div class="button-container">
+                    <button id="reset-btn">Reset</button>
+                    <button id="zoom-out-btn">Zoom Out</button>
+                    <button id="zoom-in-btn">Zoom In</button>
+                    <button id="save-btn">Save High-Res</button>
+                    <button id="delete-btn" disabled>Delete Selected</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
